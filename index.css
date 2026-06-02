@@ -524,6 +524,39 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 /* --------------------------------------- */
+/* ----- Certificates ----- */
+/* --------------------------------------- */
+
+
+.certificates {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.certificate {
+    text-align: center;
+}
+
+.certificate__image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.certificate__image:hover {
+    transform: scale(1.03);
+}
+
+.certificate__title {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* --------------------------------------- */
 /* ----- About ----- */
 /* --------------------------------------- */
 
