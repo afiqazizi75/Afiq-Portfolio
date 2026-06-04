@@ -532,6 +532,7 @@ body:not(.user-is-tabbing) a:focus {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
+    padding: 2rem;
 }
 
 .certificate {
@@ -540,10 +541,11 @@ body:not(.user-is-tabbing) a:focus {
 
 .certificate__image {
     width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    max-width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
 }
 
 .certificate__image:hover {
