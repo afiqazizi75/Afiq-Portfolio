@@ -550,7 +550,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .certificate__image:hover {
-    transform: scale(1.03);
+    transform: scale(2.00);
 }
 
 .certificate__title {
