@@ -529,42 +529,34 @@ body:not(.user-is-tabbing) a:focus {
 
 
 .certificates {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
     padding: 2rem;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-}
-
 .certificate {
-    flex: 1;
-    min-width: 250px;
-    max-width: 300px;
     text-align: center;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .certificate__image {
     width: 100%;
-    max-width: 250px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 4px;
-    margin-bottom: 1rem;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.certificate__image:hover {
+    transform: scale(1.03);
 }
 
 .certificate__title {
-    font-size: 1rem;
-    font-weight: bold;
-    margin: 0;
-    color: #333;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
 }
+
 
 /* --------------------------------------- */
 /* ----- About ----- */
